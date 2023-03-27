@@ -3,10 +3,10 @@
 # include<unordered_map>
 using namespace std;
 
-class Solution {
+class Solution{
     public:
-    vector<int> plusOne(vector<int>& digits) {
-        for (int i=digits.size()-1; i >= 0; i--) {
+    vector<int> plusOne(vector<int>& digits){
+        for (int i=digits.size()-1; i >= 0; i--){
             if(++digits[i] %= 10){
                 return digits;
             }
@@ -20,7 +20,7 @@ class Solution {
 int main() {
     vector<int> digits = {9, 9, 9};
     
-    for (int idx:Solution().plusOne(digits)){
+    for(int idx:Solution().plusOne(digits)){
         cout << idx << endl;
     }
     
