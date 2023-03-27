@@ -22,7 +22,7 @@ int main(){
     vector<int> nums = {2, 7, 11, 15};
     int target = 13;
 
-    for (int idx : Solution().twoSum(nums, target)){
+    for (int idx:Solution().twoSum(nums, target)){
         cout << idx << endl;
     }
 
