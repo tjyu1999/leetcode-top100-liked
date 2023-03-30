@@ -6,14 +6,14 @@ using namespace std;
 class Solution{
 public:
     bool containsDuplicate(vector<int>& nums){
-        unordered_set<int> result;
+        unordered_set<int> record;
 
         for(auto num : nums){
-            if(result.count(num)){
+            if(record.count(num)){
                 return true;
             }
             else{
-                result.insert(num);
+                record.insert(num);
             }
         }
         return false;
