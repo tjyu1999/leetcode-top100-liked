@@ -27,7 +27,7 @@ int main(){
     vector<int> nums1 = {4, 9, 5};
     vector<int> nums2 = {9, 4, 9, 8, 4};
 
-    for (int idx:Solution().intersect(nums1, nums2)){
+    for(int idx:Solution().intersect(nums1, nums2)){
         cout << idx << endl;
     }
 
