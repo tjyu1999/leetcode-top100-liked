@@ -40,7 +40,8 @@ int main(){
     MyStack stk;
     stk.push(1);
     stk.push(2);
-
+    
+    cout << stk.pop() << endl;
     cout << stk.top() << endl;
     cout << stk.empty() << endl;
 }
