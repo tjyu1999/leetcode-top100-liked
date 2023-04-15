@@ -12,7 +12,7 @@ struct TreeNode{
 
 class Solution{
 public:
-    vector<int> inorderTraversal(TreeNode *root){
+    vector<int> postorderTraversal(TreeNode *root){
         vector<int> result;
         if(!root) return result;
         stack<TreeNode *> st;
@@ -20,13 +20,13 @@ public:
         while(!st.empty() || root){
             if(root){
                 st.push(root);
-                root = root->left;
+                result.insert(result.begin(), root->val);
+                root = root->right;
             }
             else{
                 root = st.top();
                 st.pop();
-                result.push_back(root->val);
-                root = root->right;
+                root = root->left;
             }
         }
 
@@ -43,7 +43,7 @@ int main(){
     root->right->left = new TreeNode(6);
     root->right->right = new TreeNode(7);
 
-    for(auto num : Solution().inorderTraversal(root)) cout << num << endl;
+    for(auto num : Solution().postorderTraversal(root)) cout << num << endl;
 
     return 0;
 }

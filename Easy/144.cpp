@@ -12,22 +12,19 @@ struct TreeNode{
 
 class Solution{
 public:
-    vector<int> inorderTraversal(TreeNode *root){
+    vector<int> preorderTraversal(TreeNode *root){
         vector<int> result;
         if(!root) return result;
         stack<TreeNode *> st;
+        st.push(root);
 
-        while(!st.empty() || root){
-            if(root){
-                st.push(root);
-                root = root->left;
-            }
-            else{
-                root = st.top();
-                st.pop();
-                result.push_back(root->val);
-                root = root->right;
-            }
+        while(!st.empty()){
+            TreeNode *temp = st.top();
+            st.pop();
+            result.push_back(temp->val);
+
+            if(temp->right) st.push(temp->right);
+            if(temp->left) st.push(temp->left);
         }
 
         return result;
@@ -43,7 +40,7 @@ int main(){
     root->right->left = new TreeNode(6);
     root->right->right = new TreeNode(7);
 
-    for(auto num : Solution().inorderTraversal(root)) cout << num << endl;
+    for(auto num : Solution().preorderTraversal(root)) cout << num << endl;
 
     return 0;
 }
