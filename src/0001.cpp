@@ -27,5 +27,5 @@ int main(){
         if(cin.get() == '\n') break;
     }
     cin >> target;
-    for(auto i: Solution().twoSum(nums, target)) cout << i << endl;
+    for(auto idx: Solution().twoSum(nums, target)) cout << idx << endl;
 }
