@@ -27,7 +27,6 @@ public:
 
 int main(){
     int val;
-    
     ListNode* list1 = new ListNode(val);
     ListNode* list2 = new ListNode(val);
     ListNode* tmp;
