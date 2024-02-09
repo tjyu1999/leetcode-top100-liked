@@ -26,6 +26,9 @@ int main(){
         nums.push_back(val);
         if(cin.get() == '\n') break;
     }
+    
     Solution().moveZeroes(nums);
     for(auto n: nums) cout << n << endl;
+
+    rerturn 0;
 }
