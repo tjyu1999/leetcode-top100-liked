@@ -32,4 +32,6 @@ int main(){
     }
     cin >> target;
     cout << Solution().search(nums, target) << endl;
+
+    return 0;
 }
