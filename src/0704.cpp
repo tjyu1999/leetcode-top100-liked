@@ -31,7 +31,7 @@ int main(){
         if(cin.get() == '\n') break;
     }
     cin >> target;
+    
     cout << Solution().search(nums, target) << endl;
-
     return 0;
 }
