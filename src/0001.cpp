@@ -1,8 +1,3 @@
-#include<iostream>
-#include<vector>
-#include<unordered_map>
-using namespace std;
-
 class Solution{
 public:
     vector<int> twoSum(vector<int>& nums, int target){
@@ -16,16 +11,3 @@ public:
         return {};
     }
 };
-
-int main(){
-    vector<int> nums;
-    int val;
-    int target;
-    
-    while(cin >> val){
-        nums.push_back(val);
-        if(cin.get() == '\n') break;
-    }
-    cin >> target;
-    for(auto idx: Solution().twoSum(nums, target)) cout << idx << endl;
-}

@@ -1,6 +1,3 @@
-#include<iostream>
-using namespace std;
-
 struct ListNode{
     int val;
     ListNode* next;
@@ -24,30 +21,3 @@ public:
         }
     }
 };
-
-int main(){
-    int val;
-    ListNode* list1 = new ListNode(val);
-    ListNode* list2 = new ListNode(val);
-    ListNode* tmp;
-    
-    tmp = list1;
-    while(cin >> val){        
-        tmp->next = new ListNode(val);
-        tmp = tmp->next;
-        if(cin.get() == '\n') break;
-    }
-    
-    tmp = list2;
-    while(cin >> val){        
-        tmp->next = new ListNode(val);
-        tmp = tmp->next;
-        if(cin.get() == '\n') break;
-    }
-
-    ListNode* res = Solution().mergeTwoLists(list1->next, list2->next);
-    while(res){
-        cout << res->val << endl;
-        res = res->next;
-    }
-}
