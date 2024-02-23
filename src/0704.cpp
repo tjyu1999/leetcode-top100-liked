@@ -1,7 +1,3 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
 class Solution{
 public:
     int search(vector<int>& nums, int target){
@@ -20,18 +16,3 @@ public:
         return -1;
     }
 };
-
-int main(){
-    vector<int> nums;
-    int val;
-    int target;
-    
-    while(cin >> val){
-        nums.push_back(val);
-        if(cin.get() == '\n') break;
-    }
-    cin >> target;
-    
-    cout << Solution().search(nums, target) << endl;
-    return 0;
-}
