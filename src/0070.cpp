@@ -1,6 +1,3 @@
-#include<iostream>
-using namespace std;
-
 class Solution{
 public:
     int climbStairs(int n){
@@ -16,9 +13,3 @@ public:
         return b;
     }
 };
-
-int main(){
-    int n;
-    cin >> n;
-    cout << Solution().climbStairs(n) << endl;
-}
