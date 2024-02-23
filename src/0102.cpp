@@ -9,7 +9,7 @@ public:
         while(!q.empty()){
             vector<int> values;
             
-            for(int n = q.size(); n > 0; n --){
+            for(int n = q.size(); n > 0; n--){
                 TreeNode* node = q.front();
                 q.pop();
                 values.push_back(node->val);
