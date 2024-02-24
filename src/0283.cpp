@@ -1,7 +1,3 @@
-#include<iostream>
-#include<vector>
-using namespace std;
-
 class Solution{
 public:
     void moveZeroes(vector<int>& nums){
@@ -17,18 +13,3 @@ public:
         }
     }
 };
-
-int main(){
-    int val;
-    vector<int> nums;
-    
-    while(cin >> val){
-        nums.push_back(val);
-        if(cin.get() == '\n') break;
-    }
-    
-    Solution().moveZeroes(nums);
-    for(auto n: nums) cout << n << endl;
-
-    rerturn 0;
-}
