@@ -1,6 +1,6 @@
 class Solution{
 public:
-    vector<int> inorderTraversal(TreeNode* root){
+    vector<int> inorderTraversal(TreeNode *root){
         vector<int> res;
         stack<TreeNode*> st;
         
