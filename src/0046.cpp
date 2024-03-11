@@ -1,6 +1,6 @@
 class Solution{
 public:
-    vector<vector<int>> permute(vector<int>& nums){
+    vector<vector<int>> permute(vector<int> &nums){
         vector<vector<int>> res;
         dfs(nums, vector<bool> (nums.size()), {}, res);
         
@@ -8,7 +8,7 @@ public:
     }
     
 private:
-    void dfs(const vector<int>& nums, vector<bool>&& used, vector<int>&& path, vector<vector<int>>& res){
+    void dfs(const vector<int> &nums, vector<bool> &&used, vector<int> &&path, vector<vector<int>> &res){
         if(path.size() == nums.size()){
             res.push_back(path);
             return;
