@@ -1,6 +1,6 @@
 class Solution{
 public:
-    int kthSmallest(TreeNode* root, int k){
+    int kthSmallest(TreeNode *root, int k){
         stack<TreeNode*> st;
         
         while(root){
