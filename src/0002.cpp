@@ -1,8 +1,8 @@
 class Solution{
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2){
+    ListNode* addTwoNumbers(ListNode *l1, ListNode *l2){
         ListNode dummy(0);
-        ListNode* curr = &dummy;
+        ListNode *curr = &dummy;
         int carry = 0;
         
         while(l1 || l2 || carry > 0){
