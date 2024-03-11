@@ -1,6 +1,6 @@
 class Solution{
 public:
-    vector<vector<int>> combinationSum(vector<int>& candidates, int target){\
+    vector<vector<int>> combinationSum(vector<int> &candidates, int target){
         vector<vector<int>> res;
         dfs(candidates, target, 0, {}, res);
         
@@ -8,7 +8,7 @@ public:
     }
 
 private:
-    void dfs(vector<int>& nums, int target, int depth, vector<int>&& path, vector<vector<int>>& res){
+    void dfs(vector<int> &nums, int target, int depth, vector<int> &&path, vector<vector<int>> &res){
         if(target < 0) return;
         if(target == 0){
             res.push_back(path);
