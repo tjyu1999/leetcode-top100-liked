@@ -1,8 +1,8 @@
 class Solution{
 public:
-    ListNode* detectCycle(ListNode* head){
-        ListNode* slow = head;
-        ListNode* fast = head;
+    ListNode* detectCycle(ListNode *head){
+        ListNode *slow = head;
+        ListNode *fast = head;
         
         while(fast && fast->next){
             slow = slow->next;
