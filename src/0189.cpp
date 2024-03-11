@@ -1,6 +1,6 @@
 class Solution{
 public:
-    void rotate(vector<int>& nums, int k){
+    void rotate(vector<int> &nums, int k){
         k %= nums.size();
         
         reverse(nums, 0, nums.size() - 1);
@@ -9,7 +9,7 @@ public:
     }
     
 private:
-    void reverse(vector<int>& nums, int l, int r){
+    void reverse(vector<int> &nums, int l, int r){
         while(l < r) swap(nums[l++], nums[r--]);
     }
 };
