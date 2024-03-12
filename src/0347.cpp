@@ -1,6 +1,6 @@
 class Solution{
 public:
-    vector<int> topKFrequent(vector<int>& nums, int k){
+    vector<int> topKFrequent(vector<int> &nums, int k){
         vector<int> res;
         unorder_map<int, int> map;
         priority_queue<pair<int, int>> pq;
