@@ -1,6 +1,6 @@
 class Solution{
 public:
-    ListNode* reverseList(ListNode *head){
+    ListNode *reverseList(ListNode *head){
         ListNode *prev = nullptr;
         
         while(head){
