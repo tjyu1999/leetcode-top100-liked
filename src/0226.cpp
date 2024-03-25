@@ -1,6 +1,6 @@
 class Solution{
 public:
-    TreeNode* invertTree(TreeNode* root){
+    TreeNode *invertTree(TreeNode *root){
         if(!root) return nullptr;
         
         TreeNode* const left = root->left;
