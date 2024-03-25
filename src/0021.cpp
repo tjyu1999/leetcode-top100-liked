@@ -1,6 +1,6 @@
 class Solution{
 public:
-    ListNode* mergeTwoLists(ListNode *list1, ListNode *list2){
+    ListNode *mergeTwoLists(ListNode *list1, ListNode *list2){
         if(!list1 && !list2) return nullptr;
         else if(!list1) return list2;
         else if(!list2) return list1;
