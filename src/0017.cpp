@@ -12,7 +12,7 @@ public:
 private:
     const vector<string> letters{"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
-    void dfs(string& digits, int depth, string&& path, vector<string>& res){
+    void dfs(string &digits, int depth, string &&path, vector<string> &res){
         if(depth == digits.length()){
             res.push_back(path);
             return;
